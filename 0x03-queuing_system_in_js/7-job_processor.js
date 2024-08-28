@@ -1,9 +1,9 @@
-// var queue = require('kue').createQueue();
-var queue = require('kue').createQueue({
-  redis: {
-    port: 6379,
-    host: 'redis',
-  },});
+var queue = require('kue').createQueue();
+// var queue = require('kue').createQueue({
+//   redis: {
+//     port: 6379,
+//     host: 'redis',
+//   },});
 
 const blacklist = ['4153518780', '4153518781']
 

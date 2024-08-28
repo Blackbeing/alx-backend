@@ -45,12 +45,12 @@ const jobs = [
   }
 ];
 
-// var queue = require('kue').createQueue();
-var queue = require('kue').createQueue({
-  redis: {
-    port: 6379,
-    host: 'redis',
-  },});
+var queue = require('kue').createQueue();
+// var queue = require('kue').createQueue({
+//   redis: {
+//     port: 6379,
+//     host: 'redis',
+//   },});
 
 for (var i = 0; i < jobs.length; i++) {
   let job = queue.create('push_notification_code_2', jobs[i])
